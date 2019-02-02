@@ -3,25 +3,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="#065535"
     android:padding="12dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:hint="You will see input here"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="345dp"
+        android:layout_height="136dp"
+        android:layout_above="@id/clipboard_copy_button"
+        android:background="#ffff"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="155dp"
+        android:hint="You will see input here"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/clipboard_copy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="170dp"
+        android:text="copy to clipboard" />
 
     <ImageButton
         android:id="@+id/button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="133dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/button_background" />
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="89dp"
+        android:src="@drawable/ic_headset_mic_black_24dp" />
 
 </RelativeLayout>
